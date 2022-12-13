@@ -1,0 +1,149 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> Bryll Serios Hobbies and Skills</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+<link rel="stylesheet" href="./css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+<script src="https://kit.fontawesome.com/30a8513558.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<main>
+<main>
+<nav>
+<h1>Brayel</h1>
+
+<div class= "nav-links" id="navLinks">
+<i class="fa-solid fa-xmark" onclick="navClose()"></i>
+<ul>
+<li> <a  href="index.html">Homepage</a> </li>
+<li> <a  href="index2.html">About Me</a></li>
+<li> <a  href="index5.html"> Contacts</a></li>
+</ul>
+</div>
+<i class="fa-solid fa-bars" onclick="navOpen()"></i>
+</div>
+</nav>
+<div class="about-section">
+  <h1>About Me Page</h1>
+  <h3>University of Southern Mindanao<h3>
+  <p>1st year BS InfoSys-A </p>
+</div>
+
+<h2 style="text-align:center">Bryll Elizer Y. Serios</h2>
+<h4 style="text-align:center">College of Engineering and Information Technology</h4>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./images/received_1203953113808844.jpeg" alt="Bryll" style="width:100%">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="title"></p>
+        <p>Singing</p>
+        <p>Patient</p>
+		<p>Teamwork</p>
+		<p>Active Listening</p>
+		<p>Critical Thinking</p>
+   
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./images/Picsart_22-12-04_20-04-01-779.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Fav Musics</h2>
+        <p>Moment of silence</p>
+        <p>Love songs</p>
+		<p>Kalapati</p>
+		<p>Ikaw Pa rin</p>
+		<p>WYAT</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./images/Picsart_22-12-04_20-06-24-421.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Hobbies</h2>
+        <p>Listening to music</p>
+        <p>Basketball</p>
+		 <p>Palying Mobile Games</p>
+		  <p> Watching Anime</p>
+		   <p>Coding</p>
+        </div>
+      </div>
+    </div>
+	
+  
+  <div class="w3-content w3-section" style="max-width:650; margin-left: 350;">
+  <img class="mySlides" src="./images/dark skull evil horror skulls art artwork skeleton d.jpg" style="width:100%">
+  <img class="mySlides" src="./images/Hackers Wallpaper HD By Pcbots - Part-II.png" style="width:100%">
+  <img class="mySlides" src="./images/Minimalistic Mountains Black and White Version [2560x1440].png" style="width:100%">
+</div>
+
+<iframe width="1500" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+  </div>
+  
+<!--JAVASCRIPT-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+<footer>
+<div class="footer-container">
+<h4>Made with love by BRAYEL Company</h4>
+
+<div class="socialmedia">
+<a href="https://www.facebook.com/lawrence.dekastro"> <i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/yel_elizer/"> <i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@bryllserios18?lang=en"> <i class="fa-brands fa-tiktok"></i></a>
+<a href="https://www.pinterest.ph/bryllserios/"><i class="fa-brands fa-pinterest"></i> </a>
+<a href=""> <i class="fa-solid fa-envelope"></i></a>
+</div>
+</div>
+<div class="footerline"></div>
+<small> © 2022. BRAYEL InfoSys company all rights reserve</small>
+
+</footer>
+
+<!--JAVASCRIPT-->
+<script>
+      const navLinks = document.getElementById("navLinks");
+	  
+	  function navClose(){
+	  navLinks.style.right = "-200px";
+	  
+	  }
+	   function navOpen(){
+	  navLinks.style.right = "0";
+	  
+	  }
+
+</script>
+
+</main>
+
+ 
+</body>
+</html>
